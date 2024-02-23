@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <script src="https://kit.fontawesome.com/69f17eeec9.js" crossorigin="anonymous"></script>
+
+</head>
+
+<style>
+    body {
+        background-color: #474c71;
+    }
+
+    .login {
+        width: 15%;
+        margin-left: 40%;
+        margin-top: 15%;
+    }
+
+    h2 {
+        font-size: 40px;
+        margin-left: 8rem;
+        font-family: math;
+    }
+
+    input {
+        height: 35px;
+        width: 150%;
+        margin: 10px -5px;
+        font-family: monospace;
+        letter-spacing: 3px;
+        text-align: center;
+    }
+
+
+    button {
+        padding: 12px 75px;
+        position: relative;
+        left: 70px;
+        top: 60px;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+        letter-spacing: 1.6px;
+        color: aliceblue;
+        background-color: #252525;
+    }
+
+    span {
+        position: absolute;
+        bottom: 47%;
+        left: 45%;
+        font-family: system-ui;
+    }
+
+    span a {
+        text-decoration: none;
+        font-family: sans-serif;
+        color: black;
+    }
+
+    .fa-solid {
+        margin: 1px;
+        margin: -22.5rem
+    }
+</style>
+
+<body>
+    <div class="login">
+        <h2>Login</h2>
+
+        <input type="text" id="email" placeholder="Enter Email">
+        <i class="fa-solid fa-envelope" style="color: #474c71;"></i></i>
+        <br>
+        <input type="password" id="password" placeholder="Enter Password">
+        <i class="fa-solid fa-key" style="color: #474c71;"></i>
+        <br>
+
+        <button type="button" id="loginBtn">Login</button>
+
+        
+        <br>
+        <br>
+        <br>
+
+
+        <span>
+            Not a member ?
+            <a href="../Customer/signup.html">SignUp</a>
+        </span>
+
+
+    </div>
+
+
+    <script src="./login.js"></script>
+
+</body>
+
+</html>

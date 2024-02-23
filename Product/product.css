@@ -1,0 +1,63 @@
+    body,
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar {
+        background-color: #0275dd;
+        overflow: hidden;
+    }
+
+    .navbar ul {
+        list-style-type: none;
+    }
+
+    .navbar ul li {
+        float: left;
+    }
+
+    .navbar ul li a {
+        display: block;
+        color: wheat;
+        text-align: center;
+        padding: 0px 10px;
+        text-decoration: none;
+        font-size: 20px;
+        margin: 6px 7px;
+    }
+
+    .navbar ul li a:hover {
+        /* background-color: #555; */
+        color: white;
+    }
+
+    th {
+        border: 2px solid red;
+        font-size: 40px;
+    }
+
+    #table {
+        font-size: 40px;
+    }
+
+    button.productTableButton {
+        padding: 10px 30px
+    }
+
+    button {
+        padding: 10px 30px
+    }
+
+    h1 {
+        position: absolute;
+        left: 46%;
+        top: 15%;
+        color: white;
+    }
+
+    #signout {
+        position: absolute;
+        left: 90%;
+        font-size: 20px;
+    }

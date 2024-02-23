@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <a href="./category.html">Home</a>
+            <h1>Category</h1>
+
+            <h2 id="category"></h2>
+            
+
+</body>
+
+        <script>
+            let category = localStorage.getItem("Category");
+
+
+            document.getElementById("category").innerText = `Category : ${category}`
+
+
+        </script>
+</html>

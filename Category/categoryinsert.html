@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Category Insert</h1>
+
+    <input type="text" id="name" placeholder="Category">
+    <br>
+    <br>
+    <button onclick="submit()">Submit</button>
+
+</body>
+
+<script>
+
+function submit() {
+        let name = document.getElementById("name").value
+
+        let objectdata = {
+            Name: name,
+            ID: 1
+        }
+
+        let jsondata = (JSON.stringify(objectdata))
+
+        console.log(jsondata)
+
+        let options = {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json',
+            },
+            body: jsondata,
+        }
+
+        fetch('http://127.0.0.1:8089/category', options)
+        .then((data) => {
+            // window.location.href = "./category.html"
+        })
+
+}
+ 
+</script>
+
+
+</html>

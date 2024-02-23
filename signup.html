@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up Form</title>
+    <script src="./signup.js"></script>
+    <script src="https://kit.fontawesome.com/69f17eeec9.js" crossorigin="anonymous"></script>
+
+</head>
+
+<style>
+    body {
+        background-color: #30365e;
+    }
+
+    .signup {
+        width: 15%;
+        margin-left: 40%;
+        margin-top: 14%;
+    }
+
+    h2 {
+        font-size: 40px;
+        margin-left: 114px;
+        font-family: math;
+    }
+
+    input {
+        height: 35px;
+        width: 150%;
+        margin: 10px -5px;
+        font-family: monospace;
+        letter-spacing: 3px;
+        text-align: center;
+    }
+
+    input#id {
+        display: none;
+    }
+
+    button {
+        padding: 12px 75px;
+        position: relative;
+        left: 70px;
+        top: 60px;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+        letter-spacing: 1.6px;
+        color: aliceblue;
+        background-color: #252525;
+    }
+
+    span {
+        position: absolute;
+        bottom: 40%;
+        left: 45%;
+        font-family: system-ui;
+    }
+
+    span a {
+        text-decoration: none;
+        font-family: sans-serif;
+        color: black;
+        text-decoration: underline;
+    }
+    .fa-solid{
+        margin: 1px;
+        margin: -22.5rem
+    }
+</style>
+
+<body>
+    <div class="signup">
+
+        <h2>Sign Up</h2>
+
+        <input type="text" id="id" readonly>
+        <br>
+        <input type="text" id="name" placeholder= "Enter Name">
+        <i id="user" class="fa-solid fa-user" style="color: #30365e;"></i>
+        <br>
+        <input type="text" id="email" placeholder="Enter Email ">
+        <i class="fa-solid fa-envelope" style="color: #30365e;"></i></i>
+        <br>
+        <input type="password" id="password" placeholder="Enter Password">
+        <i class="fa-solid fa-key" style="color: #30365e;"></i>
+        <br>
+        <button onclick="signup()" id="signup">Sign Up</button>
+        <br>
+
+        <span>
+            Already a member ?
+            <a style="text-decoration: none;" href="./login.html">Log In</a>
+        </span>
+
+
+    </div>
+
+</body>
+
+</html>

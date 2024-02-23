@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Category Update</h1>
+
+    <input type="number" id="number" readonly>
+    <br>
+    <br>
+    <input type="text" id="name" placeholder="Category Update">
+    <button onclick="submit()">Submit</button>
+
+    <br>
+    <br>
+    <a href="../Category/category.html">Category Page</a>
+</body>
+<script>
+
+
+    let name = localStorage.getItem("Name");
+    let id = localStorage.getItem("ID");
+
+    document.getElementById("name").value = name
+    document.getElementById("number").value = id
+
+    function submit() {
+
+        let name = document.getElementById("name").value
+        let id = document.getElementById("number").value
+
+        let object = {
+            Name: name,
+            ID: id
+        }
+
+        let jsondata = (JSON.stringify(object))
+        console.log(jsondata)
+
+
+        let options = {
+            method: 'PUT',
+            headers: {
+                'Content-type': 'application/json',
+            },
+            body: jsondata
+        }
+
+        fetch(`http://127.0.0.1:8089/category/${id}`, options)
+            .then((data) => {
+                return data.json()
+            })
+            .then((resource) => {
+                console.log(resource)
+                window.location.href = "./category.html"
+            })
+    }
+</script>
+
+</html>
